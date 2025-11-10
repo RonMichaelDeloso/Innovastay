@@ -10,11 +10,8 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1B3C53;" styleClass="bg" stylesheets="@app.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.innovastay.innovastay.LoginController">
     <children>
-
-        <!-- ✅ Top Logo Bar -->
         <HBox alignment="CENTER_LEFT" prefHeight="64.0" spacing="10" styleClass="upper-form">
             <children>
-                <!-- Left: Logo -->
                 <ImageView fitHeight="54.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@image/inova%20logo(1)(1).png" />
@@ -23,11 +20,7 @@
                         <Insets left="15.0" />
                     </HBox.margin>
                 </ImageView>
-
-                <!-- Spacer -->
                 <Region HBox.hgrow="ALWAYS" />
-
-                <!-- Right: Menu Icon -->
                 <ImageView fitHeight="45.0" fitWidth="45.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@image/icon-menu.png" />
@@ -38,8 +31,6 @@
                 </ImageView>
             </children>
         </HBox>
-
-        <!-- ✅ Scrollable Agoda-Style Section -->
         <BorderPane VBox.vgrow="ALWAYS">
             <center>
                 <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" BorderPane.alignment="CENTER">
@@ -60,8 +51,6 @@
                             </StackPane>
                      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="102.0" prefWidth="952.0" styleClass="form">
                         <children>
-      
-                                  <!-- 🔍 Search and Filters -->
                                   <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="62.0" prefWidth="996.0" spacing="10">
                                       <HBox alignment="CENTER" prefHeight="73.0" prefWidth="912.0" spacing="10">
                                           <TextField prefHeight="35.0" prefWidth="270.0" promptText="Enter a destination" styleClass="input-field" />
@@ -89,8 +78,6 @@
 
                             <!-- 🏨 Hotel Cards -->
                             <VBox alignment="TOP_CENTER" onDragDetected="#klh" spacing="20">
-
-                                <!-- Hotel Card 1 -->
                                 <HBox alignment="CENTER_LEFT" spacing="15" styleClass="hotel-card">
                                     <children>
                                         <ImageView fitHeight="180" fitWidth="280" preserveRatio="true">
@@ -108,8 +95,6 @@
                                         <Button onAction="#klh" prefHeight="46.0" prefWidth="104.0" styleClass="check-button" text="Check Deal" />
                                     </children>
                                 </HBox>
-
-                                <!-- Hotel Card 2 -->
                                 <HBox alignment="CENTER_LEFT" spacing="15" styleClass="hotel-card">
                                     <children>
                                         <ImageView fitHeight="180" fitWidth="280" preserveRatio="true">
@@ -127,8 +112,6 @@
                                         <Button onAction="#rph" prefHeight="46.0" prefWidth="104.0" styleClass="check-button" text="Check Deal" />
                                     </children>
                                 </HBox>
-
-                                <!-- Hotel Card 3 -->
                                 <HBox alignment="CENTER_LEFT" spacing="15" styleClass="hotel-card">
                                     <children>
                                         <ImageView fitHeight="180" fitWidth="280" preserveRatio="true">
