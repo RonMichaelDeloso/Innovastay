@@ -42,6 +42,9 @@
                                        <VBox.margin>
                                           <Insets top="18.0" />
                                        </VBox.margin>
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
                                     </TextField>
                                                 <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="55.0" prefWidth="376.0" promptText="Email/Username" styleClass="input-field">
                                                     <VBox.margin>
@@ -64,17 +67,27 @@
                                                 </PasswordField>
                                                 <VBox alignment="TOP_CENTER" prefHeight="116.0" prefWidth="376.0">
                                                     <children>
-                                                        <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="376.0" style="-fx-background-color: #1B3C53;" styleClass="login-button" text="LOGIN" textFill="WHITE">
+                                                        <Button mnemonicParsing="false" onAction="#main" prefHeight="80.0" prefWidth="376.0" style="-fx-background-color: #1B3C53;" styleClass="login-button" text="LOGIN" textFill="WHITE">
                                                             <font>
                                                                 <Font name="System Bold" size="16.0" />
                                                             </font>
                                                             <VBox.margin>
-                                                                <Insets top="24.0" />
+                                                                <Insets top="5.0" />
                                                             </VBox.margin></Button>
                                                         <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="376.0">
-                                             <children>
-                                                <HBox prefHeight="79.0" prefWidth="376.0" />
-                                             </children></HBox>
+                                                            <children>
+                                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account?">
+                                                                    <HBox.margin>
+                                                                        <Insets top="9.0" />
+                                                                    </HBox.margin>
+                                                                </Text>
+                                                                <Button fx:id="register" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="37.0" styleClass="transparent-button" text="Login" textFill="#70a5ff">
+                                                                    <HBox.margin>
+                                                                        <Insets top="5.0" />
+                                                                    </HBox.margin>
+                                                                </Button>
+                                                            </children>
+                                                        </HBox>
                                                     </children>
                                                 </VBox>
                                             </children>
