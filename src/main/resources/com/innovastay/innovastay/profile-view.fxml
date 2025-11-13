@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.innovastay.innovastay.LoginController">
+
+    <children>
+
+        <!-- ✅ Top Logo Bar -->
+        <HBox alignment="CENTER_LEFT" prefHeight="64.0" spacing="10" styleClass="upper-form">
+            <children>
+                <!-- Left: Logo -->
+                <ImageView fitHeight="54.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                    <image>
+                        <Image url="@image/inova%20logo(1)(1).png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                </ImageView>
+
+                <!-- Spacer -->
+                <Region HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+      <BorderPane prefHeight="680.0" prefWidth="1280.0">
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="495.0" prefWidth="352.0">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="319.0" prefWidth="312.0" styleClass="card">
+                           <children>
+                              <HBox prefHeight="82.0" prefWidth="304.0">
+                                 <children>
+                                    <Circle fill="DODGERBLUE" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="216.0" prefWidth="100.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="yourname@gmail.com" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="25.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="143.0" prefWidth="269.0">
+                                 <children>
+                                    <HBox prefHeight="88.0" prefWidth="304.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="My Profile">
+                                             <HBox.margin>
+                                                <Insets top="40.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="81.0" prefWidth="304.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+                                             <HBox.margin>
+                                                <Insets top="36.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children></HBox>
+                                    <HBox prefHeight="23.0" prefWidth="304.0">
+                                       <VBox.margin>
+                                          <Insets top="78.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Log out">
+                                       <VBox.margin>
+                                          <Insets top="-35.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                           </children></VBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="572.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="494.0" prefWidth="837.0" styleClass="card">
+                     <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="78.0" prefWidth="346.0">
+                           <children>
+                              <Circle fill="DODGERBLUE" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                              <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="94.0" prefWidth="241.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name">
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="18.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="yourname@gmail.com">
+                                       <VBox.margin>
+                                          <Insets left="25.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="388.0" prefWidth="672.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="72.0" prefWidth="701.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " wrappingWidth="140.5820426940918">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin></Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your name" wrappingWidth="57.421875">
+                                       <HBox.margin>
+                                          <Insets left="243.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="259.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="98.0" prefWidth="678.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email Account: " />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="yourname@gmail.com">
+                                       <HBox.margin>
+                                          <Insets left="303.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="134.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="320.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="-25.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="514.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number: " />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Number">
+                                       <HBox.margin>
+                                          <Insets left="300.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="-60.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="128.0" prefWidth="505.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USA">
+                                       <HBox.margin>
+                                          <Insets left="343.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="-60.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Button alignment="CENTER" mnemonicParsing="false" text="Save Changes">
+                                 <VBox.margin>
+                                    <Insets top="19.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children></VBox>
+               </children>
+            </HBox>
+         </center></BorderPane>
+    </children>
+</VBox>

@@ -21,7 +21,7 @@
                     </HBox.margin>
                 </ImageView>
                 <Region HBox.hgrow="ALWAYS" />
-                <ImageView fitHeight="45.0" fitWidth="45.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="45.0" fitWidth="45.0" onMouseClicked="#profile" opacity="0.76" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@image/icon-menu.png" />
                     </image>
@@ -80,7 +80,7 @@
                             <VBox alignment="TOP_CENTER" onDragDetected="#klh" spacing="20">
                                 <HBox alignment="CENTER_LEFT" spacing="15" styleClass="hotel-card">
                                     <children>
-                                        <ImageView fitHeight="180" fitWidth="280" preserveRatio="true">
+                                        <ImageView fitHeight="180" fitWidth="267.0" preserveRatio="true">
                                             <image>
                                                 <Image url="@image/kt.jpeg" />
                                             </image>

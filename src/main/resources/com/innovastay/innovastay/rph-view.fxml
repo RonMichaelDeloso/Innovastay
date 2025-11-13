@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.innovastay.innovastay.LoginController">
+
+    <children>
+
+        <!-- ✅ Top Logo Bar -->
+        <HBox alignment="CENTER_LEFT" prefHeight="64.0" spacing="10" styleClass="upper-form">
+            <children>
+                <!-- Left: Logo -->
+                <ImageView fitHeight="54.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                    <image>
+                        <Image url="@image/inova%20logo(1)(1).png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                </ImageView>
+
+                <!-- Spacer -->
+                <Region HBox.hgrow="ALWAYS" />
+
+                <!-- Right: Menu Icon -->
+                <ImageView fitHeight="45.0" fitWidth="45.0" onMouseClicked="#profile" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/icon-menu.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="15.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+
+        <!-- ✅ Scrollable Agoda-Style Section -->
+        <BorderPane VBox.vgrow="ALWAYS">
+            <top>
+                <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="63.0" prefWidth="1280.0" styleClass="upper-form" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="62.0" prefWidth="996.0" spacing="10">
+                            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="912.0" spacing="10">
+                                <TextField prefHeight="35.0" prefWidth="270.0" promptText="Enter a destination" styleClass="input-field" />
+                                <DatePicker prefHeight="35.0" prefWidth="150" promptText="Check-in" styleClass="input-field" />
+                                <DatePicker prefHeight="35.0" prefWidth="150" promptText="Check-out" styleClass="input-field" />
+                                <TextField prefHeight="35.0" prefWidth="120" promptText="Guests" styleClass="input-field" />
+                                <Button prefHeight="35.0" prefWidth="107.0" styleClass="search-button" text="Search" />
+                            </HBox>
+                        </VBox>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </VBox>
+            </top>
+            <center>
+                <ScrollPane fitToWidth="true" prefHeight="430.0" prefWidth="1112.0" vbarPolicy="AS_NEEDED" BorderPane.alignment="CENTER">
+               <content>
+                        <VBox alignment="CENTER" prefHeight="953.0" prefWidth="1266.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="598.0" prefWidth="1266.0" spacing="10">
+                                    <ImageView fitHeight="400" fitWidth="500" preserveRatio="true">
+                                        <image>
+                                            <Image url="@image/kt.jpeg" />
+                                        </image>
+                                        <HBox.margin>
+                                            <Insets top="-1.0" />
+                                        </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="CENTER" prefHeight="729.0" prefWidth="243.0" spacing="10">
+                                        <ImageView fitHeight="189.0" fitWidth="243.0" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/kt.jpeg" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="181.0" fitWidth="300.0" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/kt.jpeg" />
+                                            </image>
+                                        </ImageView>
+                                    </VBox>
+                                    <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="376.0" prefWidth="207.0" spacing="10">
+                                        <ImageView fitHeight="189.0" fitWidth="243.0" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/kt.jpeg" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="182.0" fitWidth="258.0" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/kt.jpeg" />
+                                            </image>
+                                        </ImageView>
+                                    </VBox>
+                                    <VBox.margin>
+                                        <Insets top="-19.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                        <Insets top="166.0" />
+                                    </padding>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="338.0" prefWidth="1031.0">
+                                    <children>
+                                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="648.0" prefHeight="353.0" prefWidth="648.0">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                 <children>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="123.0" prefWidth="648.0" styleClass="card">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Limketkai Luxe Hotel">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" top="-1.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Limketkai Ave., Limketkai Center, Cagayan de Oro City, Cagayan De Oro City Center, Cagayan De Oro, Philippines, 9000 - SEE MAP" wrappingWidth="551.033203125">
+                                             <VBox.margin>
+                                                <Insets left="5.0" top="2.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="130.0" prefWidth="648.0" styleClass="card">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HighLights">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox prefHeight="76.0" prefWidth="618.0">
+                                             <children>
+                                                <ImageView fitHeight="57.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@image/Screenshot%202025-11-09%20224900.png" />
+                                                   </image>
+                                                   <HBox.margin>
+                                                      <Insets left="25.0" />
+                                                   </HBox.margin>
+                                                </ImageView>
+                                                <Region prefHeight="58.0" prefWidth="51.0" />
+                                                <ImageView fitHeight="54.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@image/Screenshot%202025-11-09%20225114.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Region layoutX="119.0" layoutY="10.0" prefHeight="58.0" prefWidth="51.0" />
+                                                <ImageView fitHeight="47.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@image/Screenshot%202025-11-09%20225233.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Region layoutX="237.0" layoutY="10.0" prefHeight="58.0" prefWidth="51.0" />
+                                                <ImageView fitHeight="51.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@image/Screenshot%202025-11-09%20225240.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="4.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="112.0" prefWidth="648.0" styleClass="card">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Facilities">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="5.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                        </VBox>
+                                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="365.0" prefHeight="347.0" prefWidth="377.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="108.0" prefWidth="369.0" styleClass="card">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </HBox.margin>
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PHP 4,161">
+                                                            <font>
+                                                                <Font size="28.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Region prefHeight="59.0" prefWidth="87.0">
+                                                            <HBox.margin>
+                                                                <Insets top="16.0" />
+                                                            </HBox.margin>
+                                          </Region>
+                                                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="125.0" styleClass="search-button" text="BOOK NOW" />
+                                                    </children>
+                                                    <VBox.margin>
+                                                        <Insets left="15.0" top="5.0" />
+                                                    </VBox.margin>
+                                    </HBox>
+                                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="211.0" prefWidth="369.0" styleClass="card">
+                                                    <VBox.margin>
+                                                        <Insets left="15.0" top="20.0" />
+                                                    </VBox.margin>
+                                                    <children>
+                                                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="304.0">
+                                                            <children>
+                                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8.7 Excellent">
+                                                                    <font>
+                                                                        <Font size="21.0" />
+                                                                    </font>
+                                                                </Text>
+                                                            </children>
+                                                        </HBox>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Location 9.3" wrappingWidth="234.83596801757812" />
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Room comfort and quality 9.1" />
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cleanliness 9.0" />
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Facilities 8.7" />
+                                                    </children>
+                                    </VBox>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="15.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                    <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="124.0" prefWidth="1031.0" styleClass="card">
+                                        <VBox.margin>
+                                            <Insets top="20.0" />
+                                        </VBox.margin>
+                                        <children>
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About us">
+                                                <font>
+                                                    <Font size="25.0" />
+                                                </font>
+                                            </Text>
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Experience luxury at Limketkai Luxe Hotel, the tallest hotel in Cagayan de Oro. Enjoy a rooftop infinity pool with panoramic views, a chic pool bar, and a state-of-the-art wellness center. . ." wrappingWidth="763.3360841870308">
+                                                <VBox.margin>
+                                                    <Insets top="7.0" />
+                                                </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                            </Text>
+                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Read More" textAlignment="RIGHT" wrappingWidth="964.165771484375">
+                                                <VBox.margin>
+                                                    <Insets top="-2.0" />
+                                                </VBox.margin>
+                                            </Text>
+                                                 </children>
+                        </VBox>
+                            </children>
+                            <padding>
+                                <Insets top="-193.0" />
+                            </padding>
+                        </VBox>
+               </content></ScrollPane>
+            </center>
+        </BorderPane>
+    </children>
+</VBox>
