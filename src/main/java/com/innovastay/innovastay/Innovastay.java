@@ -23,7 +23,6 @@ public class Innovastay extends Application {
         stage.setResizable(true);
         stage.show();
 
-
     }
 
     public static void main(String[] args) {
