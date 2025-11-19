@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1B3C53;" styleClass="bg" stylesheets="@app.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.innovastay.innovastay.LoginController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="64.0" spacing="10" styleClass="upper-form">
+            <children>
+                <ImageView fitHeight="54.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/inova%20logo(1)(1).png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" />
+                <ImageView fitHeight="45.0" fitWidth="45.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/icon-menu.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="15.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+        <BorderPane VBox.vgrow="ALWAYS">
+            <center>
+                <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" BorderPane.alignment="CENTER">
+                    <content>
+                        <VBox alignment="TOP_CENTER" spacing="25" style="-fx-padding: 20;">
+                            <StackPane prefHeight="212.0" prefWidth="1226.0">
+                                <ImageView fitHeight="202.0" fitWidth="1048.0" preserveRatio="false">
+                                    <image>
+                                        <Image url="@image/bgtwo.png" />
+                                    </image>
+                                    <clip>
+                                        <Rectangle arcHeight="80" arcWidth="80" height="202" width="1048" />
+                                    </clip>
+                                    <effect>
+                                        <DropShadow color="rgba(0,0,0,0.25)" offsetY="3" radius="15" />
+                                    </effect>
+                                </ImageView>
+                            </StackPane>
+                     <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="102.0" prefWidth="952.0" styleClass="form">
+                        <children>
+                                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="62.0" prefWidth="996.0" spacing="10">
+                                      <HBox alignment="CENTER" prefHeight="73.0" prefWidth="912.0" spacing="10">
+                                          <TextField prefHeight="35.0" prefWidth="270.0" promptText="Enter a destination" styleClass="input-field" />
+                                          <DatePicker prefHeight="35.0" prefWidth="150" promptText="Check-in" styleClass="input-field" />
+                                          <DatePicker prefHeight="35.0" prefWidth="150" promptText="Check-out" styleClass="input-field" />
+                                          <TextField prefHeight="35.0" prefWidth="120" promptText="Guests" styleClass="input-field" />
+                                          <Button prefHeight="35.0" prefWidth="107.0" styleClass="search-button" text="Search" />
+                                      </HBox>
+                                  </VBox>
+                        </children>
+                        <opaqueInsets>
+                           <Insets />
+                        </opaqueInsets>
+                        <VBox.margin>
+                           <Insets top="-88.0" />
+                        </VBox.margin>
+                     </VBox>
+
+                             <HBox alignment="CENTER" spacing="10">
+                                 <Button styleClass="filter-button" text="Our top picks" />
+                                 <Button styleClass="filter-button" text="Lowest price first" />
+                                 <Button styleClass="filter-button" text="Nearest to" />
+                                 <Button styleClass="filter-button" text="Best viewed" />
+                             </HBox>
+
+                            <!-- 🏨 Hotel Cards -->
+                            <VBox alignment="TOP_CENTER" onDragDetected="#klh" spacing="20">
+                                <HBox alignment="CENTER_LEFT" spacing="15" styleClass="hotel-card">
+                                    <children>
+                                        <ImageView fitHeight="180" fitWidth="280" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/kt.jpeg" />
+                                            </image>
+                                        </ImageView>
+                                        <VBox alignment="TOP_LEFT" spacing="5">
+                                            <Text styleClass="hotel-name" text="Limketkai Luxe Hotel" />
+                                            <Text styleClass="hotel-address" text="Limketkai Ave., Limketkai Center, Cagayan de Oro City" />
+                                            <Text styleClass="hotel-desc" text="This property offers comfort and modern facilities." />
+                                            <Text styleClass="hotel-price" text="PHP 4,161" />
+                                        </VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Button onAction="#klh" prefHeight="46.0" prefWidth="104.0" styleClass="check-button" text="Check Deal" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="15" styleClass="hotel-card">
+                                    <children>
+                                        <ImageView fitHeight="180" fitWidth="280" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/rp.jpeg" />
+                                            </image>
+                                        </ImageView>
+                                        <VBox alignment="TOP_LEFT" spacing="5">
+                                            <Text styleClass="hotel-name" text="Red Planet Cagayan de Oro" />
+                                            <Text styleClass="hotel-address" text="CM Recto Avenue, Cagayan de Oro City Center" />
+                                            <Text styleClass="hotel-desc" text="Modern rooms with easy city access." />
+                                            <Text styleClass="hotel-price" text="PHP 1,747" />
+                                        </VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Button onAction="#rph" prefHeight="46.0" prefWidth="104.0" styleClass="check-button" text="Check Deal" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="15" styleClass="hotel-card">
+                                    <children>
+                                        <ImageView fitHeight="180" fitWidth="280" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/cv.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <VBox alignment="TOP_LEFT" spacing="5">
+                                            <Text styleClass="hotel-name" text="Country Village Hotel" />
+                                            <Text styleClass="hotel-address" text="Villarin Street, Carmen, Cagayan de Oro City" />
+                                            <Text styleClass="hotel-desc" text="Enjoy a relaxing stay with pool and dining." />
+                                            <Text styleClass="hotel-price" text="PHP 1,617" />
+                                        </VBox>
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Button onAction="#cvh" prefHeight="46.0" prefWidth="104.0" styleClass="check-button" text="Check Deal" />
+                                    </children>
+                                </HBox>
+
+                            </VBox>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </center>
+        </BorderPane>
+    </children>
+</VBox>

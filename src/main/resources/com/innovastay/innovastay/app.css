@@ -15,11 +15,8 @@
 .input-field {
     -fx-background-radius: 25;       /* Rounded edges */
     -fx-border-radius: 25;
-    -fx-background-color: #f5f5f5;   /* Soft gray background */
-    -fx-border-color: #cccccc;       /* Light gray border */
-    -fx-border-width: 1;
+    -fx-border-color: #black;       /* Light gray border */
     -fx-padding: 0 10 0 10;          /* Space inside the field */
-    -fx-font-size: 16px;
 }
 
 .input-field:focused {
@@ -62,4 +59,127 @@
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-cursor: hand;
+}
+
+.upper-form {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 15, 0.3, 0, 5);
+}
+
+.curved-image {
+    -fx-background-radius: 30px; /* Makes the corners rounded */
+    -fx-border-radius: 50px;     /* Matches border with same radius */
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 3); /* Optional shadow */
+    -fx-clip-shape: "rounded-rectangle";
+}
+
+
+.bgform {
+    -fx-background-image: url("image/bgtwo.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-color: white;
+    -fx-background-radius: 45;
+    -fx-border-radius: 45;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 15, 0.3, 0, 5);
+    -fx-padding: 20;
+}
+
+.bgform-container {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 15, 0.3, 0, 5);
+}
+
+.image-button {
+    -fx-background-image: url("image/icon-menu.png");
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+    -fx-background-radius: 30;
+}
+
+.bg-button {
+    -fx-background-color: #f8f9fb;
+    -fx-font-family: "Segoe UI";
+}
+
+.upper-form {
+    -fx-background-color: white;
+    -fx-padding: 10;
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Search Button */
+.search-button {
+    -fx-background-color: #0071c2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+}
+
+/* Filter Buttons */
+.filter-button {
+    -fx-background-color: #e9f3fb;
+    -fx-text-fill: #0071c2;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+    -fx-padding: 6 20;
+}
+
+/* Hotel Cards */
+.hotel-card {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.3, 0, 3);
+    -fx-min-width: 950;
+    -fx-max-width: 950;
+}
+
+/* Text styles */
+.hotel-name {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.hotel-address {
+    -fx-fill: #666;
+    -fx-font-size: 13px;
+}
+
+.hotel-desc {
+    -fx-fill: #444;
+    -fx-font-size: 12px;
+}
+
+.hotel-price {
+    -fx-fill: #0071c2;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.check-button {
+    -fx-background-color: #0071c2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+    -fx-padding: 8 20;
+}
+
+.image-view {
+    -fx-cursor: hand;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.3, 0, 3);
 }
